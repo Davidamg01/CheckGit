@@ -42,3 +42,44 @@
 #            /\
 # \   /\    /
 #  \ /  \/\/
+
+
+# def jumpingOnClouds(c):
+#     # Write your code here
+#     current = 0
+#     jumps = 0
+#     for place in range(len(c)):
+#         try:
+#             if (c[current+2]) == 0:
+#                 current +=2
+#                 jumps +=1
+#             else:
+#                 current +=1
+#                 jumps+=1
+#             if current >= len(c):
+#                 break
+#         except:
+#             try:
+#                 if (c[current+1]) == 0:
+#                     current +=1
+#                     jumps+=1
+#             except:
+#                 jumps = jumps
+#     return jumps
+
+
+# c= [0,0,1, 0, 0,1, 0]
+# result = jumpingOnClouds(c)
+
+# print(str(result) + '\n')
+
+# def jumpingOnClouds(c):
+#     current = 0
+#     jumps = 0
+#     while current < len(c) - 1:
+#         if current + 2 < len(c) and c[current + 2] == 0:
+#             current += 2
+#         else:
+#             current += 1
+#         jumps += 1
+#     return jumps
